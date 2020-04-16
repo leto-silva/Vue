@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+</head>
+<body>
+   <div id ="app">
+	   {{ message }}
+	   <p>novo valor: {{valor}}</p>
+   </div>
+
+<script src="https://unpkg.com/vue/dist/vue.js" ></script>
+<script>
+   var app = new Vue({
+	   el: '#app',
+	   data: {
+		   message: 'Hello',
+		   valor: 'R$ 50,63'
+	   },
+	   created: function(){
+		   console.log("starting")
+	   }
+
+   })
+</script>
+
+</body>
+</html>
