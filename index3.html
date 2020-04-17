@@ -6,17 +6,17 @@
 </head>
 <body>
    <div id="app">
-     <div v-html="myHTML"></div>
+     <div>
+     <ul>
+        <li v-for="number in 10" v-if="number % 2 ===0"> 5 X {{number}} = {{5*number}}</li>
+     </ul>
    </div>
 
    <script src="https://unpkg.com/vue/dist/vue.js" ></script>
    <script>
       var app = new Vue({
-         el: '#app',
-         data: {
-             myHTML : '<input type="text" />'
-            
-         }
+         el: '#app'
+         
       })
    </script>
 </body>
