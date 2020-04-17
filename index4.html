@@ -6,9 +6,9 @@
 </head>
 <body>
    <div id="app">
-      <button @click="upCounter()">Click Me</button>{{counter}}
+      <button @click="upCounter">Click Me</button>{{counter}}
 
-
+   </div>
    <script src="https://unpkg.com/vue/dist/vue.js" ></script>
    <script>
       var app = new Vue({
@@ -23,6 +23,8 @@
          }
          
       })
+
+      app.$once('abc', app.upCounter);
    </script>
 </body>
 </html>
